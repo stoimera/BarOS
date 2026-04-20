@@ -1,0 +1,21 @@
+{
+  "routes": [
+    "/dashboard",
+    "/operations",
+    "/operations/orders",
+    "/operations/tables",
+    "/operations/kds",
+    "/operations/bds",
+    "/operations/checkout",
+    "/operations/menu-engineering",
+    "/operations/gift-cards",
+    "/operations/receipts",
+    "/operations/offline-sync",
+    "/operations/pricing",
+    "/operations/menu-engineering",
+    "/menu-management",
+    "/bookings",
+    "/customers"
+  ],
+  "note": "Manifest for ui-route-reachable when ENFORCE_UI_ROUTE_REACHABILITY=1 (Playwright runner can be wired separately)."
+}

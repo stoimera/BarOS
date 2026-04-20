@@ -1,0 +1,23 @@
+{
+  "allowedFilePaths": [
+    "src/lib/security/audit.ts",
+    "src/lib/bookings.ts",
+    "src/lib/customers.ts",
+    "src/lib/events.ts",
+    "src/lib/inventory.ts",
+    "src/lib/database/soft-delete.ts",
+    "src/lib/gdpr/data-export.ts",
+    "src/lib/gdpr/ccpa-preferences.ts",
+    "src/lib/compliance/legal-hold.ts",
+    "src/lib/email-marketing.ts",
+    "src/lib/operations/orders.ts",
+    "src/lib/operations/payments.ts",
+    "src/lib/operations/idempotency.ts",
+    "src/lib/operations/tabs.ts",
+    "src/lib/operations/tips.ts",
+    "src/__tests__/stores/operations-orders.integration.test.ts",
+    "src/lib/integrations/plugin-settings.ts",
+    "src/app/api/customer/loyalty/punch-voucher/route.ts",
+    "src/app/api/rewards/redeem/route.ts"
+  ]
+}

@@ -1,0 +1,23 @@
+name: Release (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Git tag to create (e.g. v1.2.0)"
+        required: true
+        type: string
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create tag
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag -a "${{ inputs.tag }}" -m "Release ${{ inputs.tag }}"
+          git push origin "${{ inputs.tag }}"

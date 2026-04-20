@@ -1,0 +1,11 @@
+title = "urban-bar-crm gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Example env and workflow templates"
+paths = [
+  '''\.env\.example$''',
+  '''\.github/workflows/''',
+]

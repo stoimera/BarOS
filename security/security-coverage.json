@@ -1,0 +1,982 @@
+{
+  "generatedAt": "2026-04-20T11:18:10.347Z",
+  "totals": {
+    "secured_wrapper": 118,
+    "secured_webhook_stub": 4,
+    "secured_custom": 7
+  },
+  "routes": [
+    {
+      "route": "src/app/api/admin/reencrypt/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/auth/check-role/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/auth/profile/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/analytics/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/by-day/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/revenue/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/stats/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/today/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/bookings/upcoming/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/chatbot/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/customer/loyalty/punch-voucher/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/customers/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/customers/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/event-templates/[id]/generate/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/event-templates/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/event-templates/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/events/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/events/[id]/rsvps/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/events/analytics/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/events/optimization/[eventId]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/events/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/events/stats/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/gdpr/california-preferences/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/gdpr/delete/me/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/gdpr/delete/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/gdpr/export/me/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/gdpr/export/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/integrations/google/reviews-callback/route.ts",
+      "status": "secured_webhook_stub",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/integrations/resend/inbound/route.ts",
+      "status": "secured_webhook_stub",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/integrations/stripe/webhook/route.ts",
+      "status": "secured_webhook_stub",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/integrations/twilio/sms/route.ts",
+      "status": "secured_webhook_stub",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/inventory/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/inventory/adjust-stock/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/inventory/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/invitation-codes/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PATCH",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/marketing/analytics/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/marketing/campaigns/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/marketing/execute/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/marketing/segments/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/marketing/send-campaign/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/menu-items/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/menu/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PATCH",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/menu/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/admin/staff/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/admin/staff/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/attendance-logs/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/attendance-logs/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/compliance/retention-run/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/consents/list/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/consents/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/event-commerce/checkin/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/event-commerce/promo-codes/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/event-commerce/ticket-sales/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/event-commerce/ticket-sales/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/event-ticket-tiers/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/floor-sections/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/gift-cards/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/gift-cards/redeem/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/gift-cards/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/integrations/plugins/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/integrations/status/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/inventory-waste/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/locations/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/memberships/assign/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/memberships/plans/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/memberships/status/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/menu-modifiers/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/occupancy/summary/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/offline-sync/batch/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/offline-sync/batches/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/[id]/events/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/[id]/items/[itemId]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/[id]/items/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/[id]/split/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/[id]/tips/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/list/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/orders/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/payments/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/payments/preauth-status/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/payments/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/pricing-windows/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/purchase-orders/[id]/receive/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/purchase-orders/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/purchase-orders/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/receipts/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/stocktakes/[id]/commit/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/stocktakes/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/suppliers/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/suppliers/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/tables/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/tables/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/tabs/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/tabs/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/timesheets/[id]/export/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/timesheets/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/operations/timesheets/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/push/send-test/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/push/subscribe/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/push/vapid-public/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/reminders/process/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/rewards/redeem/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/rewards/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/rsvps/[id]/checkin/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/rsvps/[id]/status/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/rsvps/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/sample-data/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/schedule/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/schedule/my-shifts/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/schedule/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/connections/route.ts",
+      "status": "secured_custom",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/oauth/callback/route.ts",
+      "status": "secured_custom",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/oauth/start/route.ts",
+      "status": "secured_custom",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/posts/[id]/route.ts",
+      "status": "secured_custom",
+      "methods": [
+        "DELETE",
+        "PATCH"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/posts/bulk/route.ts",
+      "status": "secured_custom",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/posts/route.ts",
+      "status": "secured_custom",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/process-scheduled/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/socials/publish/route.ts",
+      "status": "secured_custom",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/staff/me/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/staff/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/tasks/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/tasks/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/v1/customers/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/visits/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "route": "src/app/api/visits/stats/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "route": "src/app/api/waitlist/[id]/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ]
+    },
+    {
+      "route": "src/app/api/waitlist/route.ts",
+      "status": "secured_wrapper",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    }
+  ]
+}

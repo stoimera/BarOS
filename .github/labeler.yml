@@ -1,0 +1,12 @@
+# Track 11.6 — auto-label by path (extend with your team’s labels)
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: ["docs/**/*", "*.md"]
+
+operations:
+  - changed-files:
+      - any-glob-to-any-file: ["src/app/**/operations/**/*", "src/app/api/operations/**/*"]
+
+security:
+  - changed-files:
+      - any-glob-to-any-file: ["src/lib/security/**/*", "schemas/**/*", "security/**/*"]

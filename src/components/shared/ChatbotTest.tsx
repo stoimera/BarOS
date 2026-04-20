@@ -1,0 +1,1 @@
+export { ChatbotTest } from '@/components/admin/ChatbotTest'
