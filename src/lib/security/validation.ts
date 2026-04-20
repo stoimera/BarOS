@@ -165,8 +165,8 @@ export function validationErrorResponse(error: z.ZodError): Response {
     JSON.stringify({
       error: 'Validation error',
       message: 'Invalid request data',
-      details: error.errors.map((err) => ({
-        path: err.path.join('.'),
+      details: error.issues.map((err) => ({
+        path: err.path.map(String).join('.'),
         message: err.message,
       })),
     }),

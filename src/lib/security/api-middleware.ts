@@ -239,7 +239,7 @@ export function withSecurity<T = unknown>(
           return validationErrorResponse(result.error)
         }
 
-        validatedBody = result.data
+        validatedBody = result.data as T
       } catch {
         // If body parsing fails, continue without validation (for GET requests)
         if (req.method === 'GET') {

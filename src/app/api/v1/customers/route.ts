@@ -11,7 +11,7 @@ const log = createLogger('api.v1.customers')
 import { NextResponse } from 'next/server'
 import { withSecurity } from '@/lib/security/api-middleware'
 import { createClient } from '@/utils/supabase/server'
-import { z } from 'zod'
+import { z, flattenError } from 'zod'
 import { commonSchemas, sanitizeString } from '@/lib/security/validation'
 import { auditCreate } from '@/lib/security/audit'
 import { encryptEmail, encryptPhone, decryptEmail, decryptPhone } from '@/lib/security/encryption'
@@ -50,7 +50,7 @@ export const GET = withSecurity(
 
     if (!queryResult.success) {
       return NextResponse.json(
-        { error: 'Invalid query parameters', details: queryResult.error.errors },
+        { error: 'Invalid query parameters', details: flattenError(queryResult.error) },
         { status: 400 }
       )
     }

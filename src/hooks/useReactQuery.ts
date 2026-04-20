@@ -170,34 +170,31 @@ export function useApiMutation<TData, TVariables>(
   options?: Omit<UseMutationOptions<ApiResponse<TData>, ApiError, TVariables>, 'mutationFn'>
 ) {
   const queryClient = useQueryClient()
-  
+  const { onSuccess: userOnSuccess, onError: userOnError, ...restOptions } = options ?? {}
+
   return useMutation<ApiResponse<TData>, ApiError, TVariables>({
     mutationFn: async (variables) => {
       const response = await api.post<TData>(endpoint, variables)
       return response
     },
-    onSuccess: (data, variables, context) => {
-      // Extract resource type from endpoint for targeted invalidation
+    ...restOptions,
+    onSuccess: (data, variables, onMutateResult, mutationContext) => {
       const resourceType = endpoint.split('/')[1]
-      
-      // Invalidate only the specific resource type queries
-      queryClient.invalidateQueries({ 
+
+      queryClient.invalidateQueries({
         queryKey: [resourceType],
-        exact: false 
+        exact: false,
       })
-      
-      // Show success message
+
       toast.success('Operation completed successfully')
-      
-      options?.onSuccess?.(data, variables, context)
+
+      userOnSuccess?.(data, variables, onMutateResult, mutationContext)
     },
-    onError: (error, variables, context) => {
-      // Show error message
+    onError: (error, variables, onMutateResult, mutationContext) => {
       toast.error(error.message || 'Operation failed')
-      
-      options?.onError?.(error, variables, context)
+
+      userOnError?.(error, variables, onMutateResult, mutationContext)
     },
-    ...options,
   })
 }
 

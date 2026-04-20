@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Facebook, Instagram } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 import { toast } from "sonner";
 
 interface PublicSocialPost {
@@ -57,7 +58,7 @@ export default function SocialsPage() {
                 onClick={() => window.open("https://instagram.com/yourbar", "_blank")}
               >
                 <span className="flex items-center gap-2">
-                  <Instagram className="h-4 w-4" /> Instagram
+                  <SiInstagram className="h-4 w-4" /> Instagram
                 </span>
                 <ExternalLink className="h-4 w-4" />
               </Button>
@@ -67,7 +68,7 @@ export default function SocialsPage() {
                 onClick={() => window.open("https://facebook.com/yourbar", "_blank")}
               >
                 <span className="flex items-center gap-2">
-                  <Facebook className="h-4 w-4" /> Facebook
+                  <SiFacebook className="h-4 w-4" /> Facebook
                 </span>
                 <ExternalLink className="h-4 w-4" />
               </Button>

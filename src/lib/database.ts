@@ -59,7 +59,7 @@ export async function create<T>(
 ): Promise<T> {
   const { data: result, error } = await supabase
     .from(table)
-    .insert(data)
+    .insert(data as never)
     .select()
     .single()
   
@@ -84,7 +84,7 @@ export async function update<T>(
 ): Promise<T> {
   const { data: result, error } = await supabase
     .from(table)
-    .update(data)
+    .update(data as never)
     .eq('id', id)
     .select()
     .single()

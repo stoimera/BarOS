@@ -78,7 +78,7 @@ export const profileFormSchema = z.object({
   birthday: z.date().optional(),
   tags: tagsSchema,
   notes: notesSchema,
-  preferences: z.record(z.any()).default({}),
+  preferences: z.record(z.string(), z.unknown()).default({}),
 })
 
 // Event schemas
@@ -190,7 +190,7 @@ export const fileUploadSchema = z.object({
 // Search schema
 export const searchSchema = z.object({
   query: z.string().min(1, 'Search query is required'),
-  filters: z.record(z.any()).optional(),
+  filters: z.record(z.string(), z.unknown()).optional(),
 })
 
 // Export schemas for type inference
